@@ -559,7 +559,7 @@ private:
         std::regex pow_pattern(R"(^\s*pow\s+([A-Z])\s*$)");
         std::regex see_all_pattern(R"(^\s*see\s*$)");
         std::regex see_one_pattern(R"(^\s*see\s+([A-Z])\s*$)");
-        std::regex operation_pattern(R"(^\s*([A-Z])\s*([+&=\-<])\s*([A-Z])\s*$)");
+        std::regex operation_pattern(R"(^\s*([A-Za-z])\s*([+&=<\-])\s*([A-Za-z])\s*$)");
         std::regex help_pattern(R"(^\s*help\s*$)");
 
         std::smatch matches;
